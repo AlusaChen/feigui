@@ -1,0 +1,26 @@
+.DS_Store
+
+backend/cache/*
+!backend/cache/index.html
+!backend/cache/.htaccess
+
+backend/logs/*
+!backend/logs/index.html
+!backend/logs/.htaccess
+
+
+frontend/cache/*
+!frontend/cache/index.html
+!frontend/cache/.htaccess
+
+frontend/logs/*
+!frontend/logs/index.html
+!frontend/logs/.htaccess
+
+user_guide/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
