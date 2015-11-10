@@ -194,6 +194,10 @@ if ( ! is_php('5.4'))
  *  Instantiate the hooks class
  * ------------------------------------------------------
  */
+
+/**
+ * @var $EXT CI_Hooks
+ */
 	$EXT =& load_class('Hooks', 'core');
 
 /*
@@ -213,8 +217,10 @@ if ( ! is_php('5.4'))
  * depending on another class that uses it.
  *
  */
+/**
+ * @var $CFG CI_Config
+ */
 	$CFG =& load_class('Config', 'core');
-
 	// Do we have any manually set config items in the index.php file?
 	if (isset($assign_to_config) && is_array($assign_to_config))
 	{
@@ -304,6 +310,9 @@ if ( ! is_php('5.4'))
  * ------------------------------------------------------
  *  Instantiate the routing class and set the routing
  * ------------------------------------------------------
+ */
+/**
+ * @var $RTR CI_Router
  */
 	$RTR =& load_class('Router', 'core', isset($routing) ? $routing : NULL);
 
