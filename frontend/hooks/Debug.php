@@ -21,7 +21,7 @@ class Debug
     {
         if(ENVIRONMENT == 'development' && !$this->CI->input->is_ajax_request())
         {
-            //$this->CI->output->enable_profiler(TRUE);
+            $this->CI->output->enable_profiler(TRUE);
         }
     }
 }

@@ -1,0 +1,13 @@
+<!--
+<script src="//cdn.ckeditor.com/4.5.5/standard/ckeditor.js"></script>
+-->
+<script src="/statics/ckeditor/ckeditor.js"></script>
+<script src="/statics/ckeditor/config.js"></script>
+<script>
+    var editor = CKEDITOR.replace( 'editor1');
+    var data = editor.getData();
+    editor.on( 'change', function( evt ) {
+        // getData() returns CKEditor's HTML content.
+        console.log( 'Total bytes: ' + evt.editor.getData().length );
+    });
+</script>
